@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://djbwnqnohwj1r"]
+
+[ext_resource type="Texture2D" uid="uid://cful8qki02mia" path="res://Assets/Furniture/window_frame.png" id="1_qn15c"]
+[ext_resource type="Texture2D" uid="uid://bdglgasu4o6c6" path="res://Assets/Furniture/tutorial board.png" id="2_uudrj"]
+
+[node name="Node2D" type="Node2D" unique_id=795804519]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2050504046]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.5464157, 0.6996918, 0.793096, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Window" type="Node2D" parent="." unique_id=76484943]
+
+[node name="TextureRect" type="TextureRect" parent="Window" unique_id=1982590798]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 704.0
+offset_bottom = 448.0
+texture = ExtResource("1_qn15c")
+expand_mode = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Tutorial_Board" type="Node2D" parent="." unique_id=250844378]
+
+[node name="TextureRect" type="TextureRect" parent="Tutorial_Board" unique_id=1540502192]
+texture_filter = 1
+offset_left = 768.0
+offset_top = 448.32178
+offset_right = 1152.1584
+offset_bottom = 768.1664
+rotation = -1.5707964
+texture = ExtResource("2_uudrj")
+expand_mode = 1
