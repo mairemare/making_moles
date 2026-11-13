@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d20fe4d2l8fiw"
-path="res://.godot/imported/open_eyed_mole.png-bde0749086c6ad32613e4dab2003eeb7.ctex"
+uid="uid://sy54scgnslxp"
+path="res://.godot/imported/full_beaker.png-7922b5616d27298ecaec8098b4d3c1ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Moles/open_eyed_mole.png"
-dest_files=["res://.godot/imported/open_eyed_mole.png-bde0749086c6ad32613e4dab2003eeb7.ctex"]
+source_file="res://Assets/Beakers/full_beaker.png"
+dest_files=["res://.godot/imported/full_beaker.png-7922b5616d27298ecaec8098b4d3c1ae.ctex"]
 
 [params]
 

@@ -15,11 +15,15 @@ run/main_scene="uid://dbba1xrm6aau4"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*uid://dwsmwv35lq100"
+
 [display]
 
 window/size/mode=3
-window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
+window/size/resizable=false
+window/stretch/mode="viewport"
 
 [editor_plugins]
 

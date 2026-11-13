@@ -1,7 +1,39 @@
 [gd_scene format=3 uid="uid://dbba1xrm6aau4"]
 
 [ext_resource type="Texture2D" uid="uid://2474tp0tq8lt" path="res://Assets/Furniture/chalkboard.png" id="1_48xlc"]
+[ext_resource type="Script" uid="uid://bo0s72eujnmpi" path="res://Scenes/main_menu.gd" id="1_n45e2"]
 [ext_resource type="Texture2D" uid="uid://bywskvhyybqok" path="res://Assets/Main Menu/pixil-frame-0-15.png" id="2_1ehe0"]
+[ext_resource type="FontFile" uid="uid://c2rodknh6gaj3" path="res://Assets/Fonts/Magiera Script.ttf" id="2_ce3w2"]
+[ext_resource type="FontFile" uid="uid://bsb1yfcus3e1l" path="res://Assets/Fonts/Halogen.ttf" id="3_ce3w2"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n45e2"]
+bg_color = Color(0.18966004, 0.4974674, 0.37108138, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.12374584, 0.2919288, 0.19685462, 1)
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+corner_detail = 16
+expand_margin_top = 3.0
+expand_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opfnp"]
+bg_color = Color(0.07141527, 0.23454261, 0.1686163, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.12374584, 0.2919288, 0.19685462, 1)
+border_blend = true
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
 
 [node name="Control" type="Control" unique_id=1945192030]
 layout_mode = 3
@@ -10,6 +42,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_n45e2")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1697945214]
 layout_mode = 1
@@ -19,9 +52,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -576.0
-offset_top = -324.0
-offset_right = 576.0
-offset_bottom = 324.0
+offset_top = -400.0
+offset_right = 624.0
+offset_bottom = 437.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.7132156, 0.41481006, 0.46130997, 1)
@@ -50,13 +83,29 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -600.0
-offset_top = -400.0
-offset_right = 600.0
-offset_bottom = 400.0
+offset_left = -576.0
+offset_top = -324.0
+offset_right = 624.0
+offset_bottom = 476.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("2_1ehe0")
+metadata/_edit_lock_ = true
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1657871092]
+texture_filter = 1
+layout_mode = 0
+offset_left = 640.0
+offset_top = 128.0
+offset_right = 1024.0
+offset_bottom = 208.0
+theme_override_fonts/normal_font = ExtResource("2_ce3w2")
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "[wave]Making Moles"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1766063949]
 layout_mode = 1
@@ -65,22 +114,57 @@ anchor_left = 0.73300004
 anchor_top = 0.36900002
 anchor_right = 0.73300004
 anchor_bottom = 0.36900002
-offset_left = -244.41602
-offset_top = -177.11201
-offset_right = 224.58398
-offset_bottom = 169.88799
-grow_horizontal = 0
+offset_left = -204.41602
+offset_top = -47.112015
+offset_right = 179.58398
+offset_bottom = 144.88799
 theme_override_constants/separation = 24
 alignment = 1
 
-[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer" unique_id=1657871092]
-layout_mode = 2
-theme_override_font_sizes/normal_font_size = 32
-text = "Making Moles"
-fit_content = true
-horizontal_alignment = 1
-vertical_alignment = 1
-
 [node name="Play" type="Button" parent="VBoxContainer" unique_id=48467559]
 layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.044694483, 0.1358217, 0.06811853, 1)
+theme_override_colors/font_hover_color = Color(0.35896423, 0.61426777, 0.43351528, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.20158851, 0.42502874, 0.25477138, 1)
+theme_override_colors/font_outline_color = Color(0.44484326, 0.4448433, 0.4448433, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("3_ce3w2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_n45e2")
 text = "Play"
+
+[node name="Creative_Mode" type="Button" parent="VBoxContainer" unique_id=1462694712]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.044694483, 0.1358217, 0.06811853, 1)
+theme_override_colors/font_hover_color = Color(0.35896423, 0.61426777, 0.43351528, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.20158851, 0.42502874, 0.25477138, 1)
+theme_override_colors/font_outline_color = Color(0.44484326, 0.4448433, 0.4448433, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("3_ce3w2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_n45e2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_opfnp")
+text = "Creative Mode"
+
+[node name="Quit" type="Button" parent="VBoxContainer" unique_id=67424676]
+layout_mode = 2
+mouse_default_cursor_shape = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.044694483, 0.1358217, 0.06811853, 1)
+theme_override_colors/font_hover_color = Color(0.35896423, 0.61426777, 0.43351528, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.20158851, 0.42502874, 0.25477138, 1)
+theme_override_colors/font_outline_color = Color(0.44484326, 0.4448433, 0.4448433, 1)
+theme_override_constants/outline_size = 2
+theme_override_constants/h_separation = 8
+theme_override_fonts/font = ExtResource("3_ce3w2")
+theme_override_styles/normal = SubResource("StyleBoxFlat_n45e2")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_opfnp")
+text = "Quit Game"
+
+[connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="VBoxContainer/Creative_Mode" to="." method="_on_creative_mode_pressed"]
+[connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

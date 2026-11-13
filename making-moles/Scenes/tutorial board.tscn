@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://5503puru1i6d"]
+
+[ext_resource type="Texture2D" uid="uid://bdglgasu4o6c6" path="res://Assets/Furniture/tutorial board.png" id="1_ellm4"]
+
+[node name="Control" type="Control" unique_id=1113594389]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=465417305]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ellm4")
+expand_mode = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1050234771]
+layout_mode = 1
+offset_left = 94.0
+offset_top = 97.0
+offset_right = 410.0
+offset_bottom = 331.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+text = "Talk to the scientist to take their order.
+
+Go to the balancing station and drag and drop moles until the chemical equation is balanced.
+
+Go back to the scientists and tell them how much moles they'll need."
+vertical_alignment = 1
