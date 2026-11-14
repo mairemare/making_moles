@@ -1,5 +1,8 @@
 extends Control
 
+func _ready() -> void:
+	$AnimatedSprite2D.play("bubbles")
+
 func _on_play_pressed() -> void:
 	get_tree().change_scene_to_file("res://Scenes/station_1.tscn")
 

@@ -1,9 +1,12 @@
 [gd_scene format=3 uid="uid://c6uefp43md6cj"]
 
-[ext_resource type="Script" uid="uid://d3gs48vufmxeo" path="res://Scenes/balancing_station.gd" id="1_kdrkx"]
-[ext_resource type="Texture2D" uid="uid://d0kpyu6l0e28p" path="res://Assets/Beakers/empty beaker.png" id="2_6l3b5"]
-[ext_resource type="Script" uid="uid://wbn3m3hxfjc0" path="res://Scripts/option_button.gd" id="3_6l3b5"]
-[ext_resource type="FontFile" uid="uid://bsb1yfcus3e1l" path="res://Assets/Fonts/Halogen.ttf" id="3_nh16s"]
+[ext_resource type="Script" uid="uid://d3gs48vufmxeo" path="res://Scenes/molestograms.gd" id="1_nmpy0"]
+[ext_resource type="FontFile" uid="uid://bsb1yfcus3e1l" path="res://Assets/Fonts/Halogen.ttf" id="2_c61dm"]
+[ext_resource type="Script" uid="uid://wbn3m3hxfjc0" path="res://Scripts/option_button.gd" id="3_adsal"]
+[ext_resource type="Texture2D" uid="uid://bujwqq7473kil" path="res://Assets/Furniture/pixil-frame-0-27.png" id="4_c61dm"]
+[ext_resource type="Texture2D" uid="uid://d0kpyu6l0e28p" path="res://Assets/Beakers/empty beaker.png" id="4_h8wax"]
+[ext_resource type="Texture2D" uid="uid://dhf6wq62dkoog" path="res://Assets/Furniture/pixil-frame-0-28.png" id="5_adsal"]
+[ext_resource type="Texture2D" uid="uid://d2lx1wbuv7yh7" path="res://Assets/Furniture/pixil-frame-0-30.png" id="7_h8wax"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6l3b5"]
 content_margin_left = 8.0
@@ -176,24 +179,134 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
-[node name="balancing_station" type="Node2D" unique_id=1213755669]
-script = ExtResource("1_kdrkx")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h8wax"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.4416232, 0.4960662, 0.75690573, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.6895498, 0.39005876, 0.6695998, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4cbj7"]
+bg_color = Color(0.7534232, 0.7860489, 0.92105556, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.9344414, 0.60008, 0.73453444, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6lcbl"]
+bg_color = Color(0.7360183, 0.77060187, 0.914822, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.8500035, 0.36249495, 0.58449584, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1prtp"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.28354463, 0.33566323, 0.4644599, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.2702342, 0.31573117, 0.43964255, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="molestograms" type="Node2D" unique_id=1213755669]
+script = ExtResource("1_nmpy0")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=270374461]
-offset_top = -264.0
 offset_right = 1152.0
-offset_bottom = 912.0
-color = Color(0.37215889, 0.46020252, 0.5259592, 1)
+offset_bottom = 648.0
+color = Color(0.62744474, 0.65294886, 0.76582867, 1)
 metadata/_edit_lock_ = true
 
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1418800198]
+offset_top = 385.0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.5281899, 0.5372635, 0.68414193, 1)
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1955930377]
+offset_left = 448.0
+offset_top = 184.0
+offset_right = 720.0
+offset_bottom = 392.0
+texture = ExtResource("7_h8wax")
+expand_mode = 1
+
+[node name="balance" type="TextureRect" parent="." unique_id=1957778359]
+texture_filter = 1
+offset_left = 672.0
+offset_top = 208.0
+offset_right = 1024.0
+offset_bottom = 559.0
+texture = ExtResource("4_c61dm")
+
+[node name="mole balance" type="TextureRect" parent="." unique_id=1922681477]
+texture_filter = 1
+offset_left = 128.0
+offset_top = 208.0
+offset_right = 480.0
+offset_bottom = 559.0
+texture = ExtResource("5_adsal")
+
+[node name="molesbeaker" type="TextureRect" parent="." unique_id=423239147]
+texture_filter = 1
+offset_left = 160.0
+offset_top = 148.0
+offset_right = 432.0
+offset_bottom = 385.0
+texture = ExtResource("4_h8wax")
+expand_mode = 1
+
+[node name="gramsbeaker" type="TextureRect" parent="." unique_id=1189315108]
+texture_filter = 1
+offset_left = 704.0
+offset_top = 148.0
+offset_right = 976.0
+offset_bottom = 385.0
+texture = ExtResource("4_h8wax")
+expand_mode = 1
+
 [node name="OptionButton" type="OptionButton" parent="." unique_id=420659225]
-offset_left = 192.0
-offset_top = 128.0
-offset_right = 384.0
-offset_bottom = 188.0
+offset_left = 208.0
+offset_top = 88.0
+offset_right = 400.0
+offset_bottom = 148.0
+tooltip_text = "Select an element."
 mouse_default_cursor_shape = 2
 theme_override_constants/h_separation = 7
-theme_override_fonts/font = ExtResource("3_nh16s")
+theme_override_fonts/font = ExtResource("2_c61dm")
 theme_override_styles/normal = SubResource("StyleBoxFlat_6l3b5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_kdrkx")
 theme_override_styles/hover = SubResource("StyleBoxFlat_nh16s")
@@ -215,30 +328,14 @@ popup/item_5/text = "Sodium (Na)"
 popup/item_5/id = 6
 popup/item_6/text = "Chlorine (Cl)"
 popup/item_6/id = 7
-script = ExtResource("3_6l3b5")
-
-[node name="molesbeaker" type="TextureRect" parent="." unique_id=423239147]
-offset_left = 136.0
-offset_top = 192.0
-offset_right = 408.0
-offset_bottom = 429.0
-texture = ExtResource("2_6l3b5")
-expand_mode = 1
-
-[node name="gramsbeaker" type="TextureRect" parent="." unique_id=1189315108]
-offset_left = 712.0
-offset_top = 192.0
-offset_right = 984.0
-offset_bottom = 429.0
-texture = ExtResource("2_6l3b5")
-expand_mode = 1
+script = ExtResource("3_adsal")
 
 [node name="moles" type="RichTextLabel" parent="." unique_id=1214586350]
-offset_left = 192.0
-offset_top = 456.0
-offset_right = 384.0
-offset_bottom = 504.0
-theme_override_fonts/normal_font = ExtResource("3_nh16s")
+offset_left = 208.0
+offset_top = 416.0
+offset_right = 400.0
+offset_bottom = 464.0
+theme_override_fonts/normal_font = ExtResource("2_c61dm")
 theme_override_font_sizes/normal_font_size = 32
 text = "moles"
 fit_content = true
@@ -249,11 +346,11 @@ vertical_alignment = 1
 anchors_preset = -1
 anchor_left = 2.8850002
 anchor_right = 2.8850002
-offset_left = 704.0
-offset_top = 456.0
-offset_right = 1024.0
-offset_bottom = 504.0
-theme_override_fonts/normal_font = ExtResource("3_nh16s")
+offset_left = 688.0
+offset_top = 416.0
+offset_right = 1008.0
+offset_bottom = 464.0
+theme_override_fonts/normal_font = ExtResource("2_c61dm")
 theme_override_font_sizes/normal_font_size = 32
 text = "grams"
 fit_content = true
@@ -265,11 +362,12 @@ anchors_preset = -1
 anchor_left = 2.8850002
 anchor_right = 2.8850002
 offset_left = 448.0
-offset_top = 272.0
+offset_top = 216.0
 offset_right = 704.0
-offset_bottom = 320.0
-theme_override_fonts/normal_font = ExtResource("3_nh16s")
+offset_bottom = 264.0
+theme_override_fonts/normal_font = ExtResource("2_c61dm")
 theme_override_font_sizes/normal_font_size = 32
+text = "element"
 fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -279,10 +377,10 @@ anchors_preset = -1
 anchor_left = 2.8850002
 anchor_right = 2.8850002
 offset_left = 448.0
-offset_top = 384.0
+offset_top = 328.0
 offset_right = 704.0
-offset_bottom = 432.0
-theme_override_fonts/normal_font = ExtResource("3_nh16s")
+offset_bottom = 376.0
+theme_override_fonts/normal_font = ExtResource("2_c61dm")
 theme_override_font_sizes/normal_font_size = 32
 text = "for every 1 mole"
 fit_content = true
@@ -292,12 +390,12 @@ vertical_alignment = 1
 [node name="Add" type="Button" parent="." unique_id=1202768920]
 texture_filter = 1
 offset_left = 192.0
-offset_top = 512.0
+offset_top = 496.0
 offset_right = 256.0
-offset_bottom = 576.0
+offset_bottom = 560.0
 tooltip_text = "Add moles to the beaker"
 mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("3_nh16s")
+theme_override_fonts/font = ExtResource("2_c61dm")
 theme_override_font_sizes/font_size = 56
 theme_override_styles/normal = SubResource("StyleBoxFlat_6mmeu")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_wsqfb")
@@ -306,13 +404,13 @@ theme_override_styles/disabled = SubResource("StyleBoxFlat_mhadn")
 text = "+"
 
 [node name="Subtract" type="Button" parent="." unique_id=625107658]
-offset_left = 320.0
-offset_top = 512.0
-offset_right = 384.0
-offset_bottom = 576.0
+offset_left = 352.0
+offset_top = 496.0
+offset_right = 416.0
+offset_bottom = 560.0
 tooltip_text = "Subtract moles from the beaker"
 mouse_default_cursor_shape = 2
-theme_override_fonts/font = ExtResource("3_nh16s")
+theme_override_fonts/font = ExtResource("2_c61dm")
 theme_override_font_sizes/font_size = 56
 theme_override_styles/normal = SubResource("StyleBoxFlat_6wxgt")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_2hgqy")
@@ -320,14 +418,21 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_472fq")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_ukuj2")
 text = "-"
 
-[node name="Measure" type="Button" parent="." unique_id=1502108852]
-offset_left = 768.0
-offset_top = 520.0
-offset_right = 960.0
-offset_bottom = 568.0
-theme_override_fonts/font = ExtResource("3_nh16s")
-theme_override_font_sizes/font_size = 40
-text = "measure"
+[node name="Exit" type="Button" parent="." unique_id=1826604802]
+offset_left = 1064.0
+offset_top = 24.0
+offset_right = 1128.0
+offset_bottom = 88.0
+tooltip_text = "Exit"
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("2_c61dm")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/normal = SubResource("StyleBoxFlat_h8wax")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4cbj7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6lcbl")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_1prtp")
+text = "x"
 
 [connection signal="pressed" from="Add" to="." method="_on_add_pressed"]
 [connection signal="pressed" from="Subtract" to="." method="_on_subtract_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]

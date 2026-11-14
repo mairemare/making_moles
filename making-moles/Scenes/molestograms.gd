@@ -18,12 +18,19 @@ func _process(_delta: float) -> void:
 
 	#controls buttons and beakers
 	if moles_added >= 1 or moles_added <= 4 :
+		
+		# disbables false to add or subtract
 		$Add.disabled = false
 		$Subtract.disabled = false
+		
+		#change cursor to pointing
+		$Add.mouse_default_cursor_shape = 2
+		$Subtract.mouse_default_cursor_shape = 2
+		
+		# moles and stuff in beaker
 		$gramsbeaker.texture = load("res://Assets/Beakers/lightbeaker.png")
 		if moles_added == 1:
 			$molesbeaker.texture = load("res://Assets/Moles/one_mole.png")
-			
 		if moles_added == 2:
 			$molesbeaker.texture = load("res://Assets/Moles/two_moles.png")
 		if moles_added == 3:
@@ -31,13 +38,17 @@ func _process(_delta: float) -> void:
 		if moles_added == 4:
 			$molesbeaker.texture = load("res://Assets/Moles/four_moles.png")
 	
+	#disable add when it reaches max
 	if moles_added == 5:
 		$Add.disabled = true
+		$Add.mouse_default_cursor_shape = 0
 		$molesbeaker.texture = load("res://Assets/Moles/five_moles.png")
 		$gramsbeaker.texture = load("res://Assets/Beakers/heavybeaker.png")
-		
+	
+	#disable sub when it reaches min
 	if moles_added == 0:
 		$Subtract.disabled = true
+		$Subtract.mouse_default_cursor_shape = 0
 		$molesbeaker.texture = load("res://Assets/Beakers/empty beaker.png")
 		$gramsbeaker.texture = load("res://Assets/Beakers/empty beaker.png")
 	
@@ -52,3 +63,5 @@ func _on_add_pressed() -> void:
 func _on_subtract_pressed() -> void:
 	moles_added -= 1
 		
+func _on_exit_pressed() -> void:
+	get_tree().change_scene_to_file("res://Scenes/station_1.tscn")
