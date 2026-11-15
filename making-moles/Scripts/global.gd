@@ -3,7 +3,7 @@ extends Node
 #stuff
 var player_point = 0
 var lives = 3
-var grams = 0
+var grams = 58.44
 
 #conversions
 #element

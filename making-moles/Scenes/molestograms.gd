@@ -53,6 +53,7 @@ func _process(_delta: float) -> void:
 		$molesbeaker.texture = load("res://Assets/Beakers/empty beaker.png")
 		$gramsbeaker.texture = load("res://Assets/Beakers/empty beaker.png")
 	
+	
 	#equation for getting the answer (see option button script)
 	answer = (Global.element) * (moles_added)
 	$grams.text = str(answer) + " grams"
