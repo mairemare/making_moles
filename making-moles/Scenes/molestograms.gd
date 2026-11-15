@@ -2,7 +2,7 @@ extends Node2D
 @onready var moles: RichTextLabel = $moles
 @onready var grams: RichTextLabel = $grams
 
-var moles_added = 0
+var moles_added = 1
 var answer = 0
 
 
@@ -10,7 +10,8 @@ var answer = 0
 func _ready() -> void:
 	$Subtract.disabled = true
 	$Add.disabled = false
-
+	$Record.disabled = true
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
 	#says the amount of moles youre adding
@@ -55,7 +56,8 @@ func _process(_delta: float) -> void:
 	#equation for getting the answer (see option button script)
 	answer = (Global.element) * (moles_added)
 	$grams.text = str(answer) + " grams"
-
+	
+	
 #adding and subtracting moles
 func _on_add_pressed() -> void:
 	moles_added += 1
@@ -64,4 +66,8 @@ func _on_subtract_pressed() -> void:
 	moles_added -= 1
 		
 func _on_exit_pressed() -> void:
-	get_tree().change_scene_to_file("res://Scenes/station_1.tscn")
+	get_tree().change_scene_to_file("res://Scenes/home.tscn")
+
+func _on_record_pressed() -> void:
+	Global.grams = answer
+	print(str(Global.grams))

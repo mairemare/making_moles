@@ -1,0 +1,262 @@
+[gd_scene format=3 uid="uid://idgesfwrquwq"]
+
+[ext_resource type="Texture2D" uid="uid://bsnrqs5gbky61" path="res://Assets/Beakers/heavybeaker.png" id="1_0ra42"]
+[ext_resource type="Texture2D" uid="uid://b4ut7gd7qcv3f" path="res://Assets/Beakers/pixil-frame-0-38.png" id="2_8x8gh"]
+[ext_resource type="FontFile" uid="uid://bsb1yfcus3e1l" path="res://Assets/Fonts/Halogen.ttf" id="2_ydcy6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ydcy6"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.09803922, 0.09803922, 0.09803922, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8x8gh"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h52d7"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.22352941, 0.22352941, 0.22352941, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6563e"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.09803922, 0.09803922, 0.09803922, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h8wax"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.71345454, 0.24589509, 0.6984641, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.6895498, 0.39005876, 0.6695998, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4cbj7"]
+bg_color = Color(0.7534232, 0.7860489, 0.92105556, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.9344414, 0.60008, 0.73453444, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6lcbl"]
+bg_color = Color(0.8904631, 0.56416714, 0.86889136, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.8500035, 0.36249495, 0.58449584, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1prtp"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.28354463, 0.33566323, 0.4644599, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.2702342, 0.31573117, 0.43964255, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6l3b5"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.37187055, 0.2400937, 0.63105136, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kdrkx"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.21508199, 0.12315822, 0.38109186, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nh16s"]
+content_margin_left = 8.0
+content_margin_top = 4.0
+content_margin_right = 8.0
+content_margin_bottom = 4.0
+bg_color = Color(0.18631536, 0.34409294, 0.5311358, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="Node2D" type="Node2D" unique_id=286947295]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1448625603]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.2627451, 0.18039216, 0.31764707, 1)
+metadata/_edit_lock_ = true
+
+[node name="beaker" type="Button" parent="." unique_id=1851514107]
+texture_filter = 1
+offset_left = 64.0
+offset_top = 160.0
+offset_right = 319.0
+offset_bottom = 417.0
+tooltip_text = "Use mass of solid"
+theme_override_styles/normal = SubResource("StyleBoxFlat_ydcy6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8x8gh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_h52d7")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_6563e")
+icon = ExtResource("1_0ra42")
+icon_alignment = 1
+expand_icon = true
+metadata/_edit_use_anchors_ = true
+
+[node name="beaker2" type="Button" parent="." unique_id=1873744450]
+texture_filter = 1
+offset_left = 824.0
+offset_top = 160.0
+offset_right = 1079.0
+offset_bottom = 417.0
+tooltip_text = "Add distilled water"
+theme_override_styles/normal = SubResource("StyleBoxFlat_ydcy6")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8x8gh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_h52d7")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_6563e")
+icon = ExtResource("2_8x8gh")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Button2" type="Button" parent="." unique_id=481287222]
+offset_left = 704.0
+offset_top = 512.0
+offset_right = 896.0
+offset_bottom = 576.0
+theme_override_fonts/font = ExtResource("2_ydcy6")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_h8wax")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4cbj7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6lcbl")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_1prtp")
+text = "Shake"
+
+[node name="Button3" type="Button" parent="." unique_id=390110718]
+offset_left = 256.0
+offset_top = 512.0
+offset_right = 448.0
+offset_bottom = 576.0
+theme_override_fonts/font = ExtResource("2_ydcy6")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_h8wax")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4cbj7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6lcbl")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_1prtp")
+text = "Swirl"
+
+[node name="OptionButton" type="OptionButton" parent="." unique_id=1640994045]
+offset_left = 448.0
+offset_top = 31.0
+offset_right = 704.0
+offset_bottom = 102.0
+theme_override_constants/h_separation = 7
+theme_override_fonts/font = ExtResource("2_ydcy6")
+theme_override_styles/normal = SubResource("StyleBoxFlat_6l3b5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_kdrkx")
+theme_override_styles/hover = SubResource("StyleBoxFlat_nh16s")
+theme_override_constants/arrow_margin = 15
+alignment = 1
+allow_reselect = true
+item_count = 3
+popup/item_0/text = "Potassium Nitrate (KNO3)"
+popup/item_0/id = 0
+popup/item_1/text = "Calcium Chloride (CaCl2)"
+popup/item_1/id = 1
+popup/item_2/text = "Sodium Chloride (NaCl)"
+popup/item_2/id = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1879022987]
+offset_left = 64.0
+offset_top = 416.0
+offset_right = 319.0
+offset_bottom = 480.0
+theme_override_fonts/normal_font = ExtResource("2_ydcy6")
+theme_override_font_sizes/normal_font_size = 24
+text = "grams"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true

@@ -2,10 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://2474tp0tq8lt" path="res://Assets/Furniture/chalkboard.png" id="1_48xlc"]
 [ext_resource type="Script" uid="uid://bo0s72eujnmpi" path="res://Scenes/main_menu.gd" id="1_n45e2"]
-[ext_resource type="Texture2D" uid="uid://bywskvhyybqok" path="res://Assets/Main Menu/pixil-frame-0-15.png" id="2_1ehe0"]
+[ext_resource type="Texture2D" uid="uid://bywskvhyybqok" path="res://Assets/rockey/pixil-frame-0-15.png" id="2_1ehe0"]
 [ext_resource type="FontFile" uid="uid://c2rodknh6gaj3" path="res://Assets/Fonts/Magiera Script.ttf" id="2_ce3w2"]
 [ext_resource type="FontFile" uid="uid://bsb1yfcus3e1l" path="res://Assets/Fonts/Halogen.ttf" id="3_ce3w2"]
-[ext_resource type="Texture2D" uid="uid://ubspsraryhsv" path="res://Assets/Main Menu/pixilart-sprite.png" id="3_opfnp"]
+[ext_resource type="Texture2D" uid="uid://ubspsraryhsv" path="res://Assets/Furniture/pixilart-sprite.png" id="3_opfnp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_cp0ys"]
 atlas = ExtResource("3_opfnp")

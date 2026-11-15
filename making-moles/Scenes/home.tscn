@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://djbwnqnohwj1r"]
+
+[ext_resource type="Script" uid="uid://td213bwbf84b" path="res://Scenes/home.gd" id="1_12ycv"]
+[ext_resource type="Texture2D" uid="uid://2474tp0tq8lt" path="res://Assets/Furniture/chalkboard.png" id="2_fhpuh"]
+[ext_resource type="Texture2D" uid="uid://8th6mi0gyi2x" path="res://Assets/rockey/pixil-frame-0-34.png" id="2_llnbm"]
+[ext_resource type="Texture2D" uid="uid://67b0nfwfyix6" path="res://Assets/rockey/glasses.png" id="3_12ycv"]
+[ext_resource type="Texture2D" uid="uid://cq7054hm7d2qc" path="res://Assets/rockey/open.png" id="3_llnbm"]
+
+[node name="Node2D" type="Node2D" unique_id=795804519]
+script = ExtResource("1_12ycv")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2050504046]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.88538814, 0.8582654, 0.9485633, 1)
+metadata/_edit_lock_ = true
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1459276055]
+offset_top = 448.0
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.6300914, 0.36482078, 0.5134624, 1)
+metadata/_edit_lock_ = true
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=389529585]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 640.0
+offset_bottom = 352.0
+texture = ExtResource("2_fhpuh")
+expand_mode = 1
+
+[node name="main_rock" type="TextureRect" parent="." unique_id=1483116004]
+texture_filter = 1
+offset_top = 80.0
+offset_right = 648.0
+offset_bottom = 512.0
+texture = ExtResource("2_llnbm")
+
+[node name="eyes" type="TextureRect" parent="." unique_id=1570258596]
+texture_filter = 1
+offset_top = 80.0
+offset_right = 648.0
+offset_bottom = 512.0
+texture = ExtResource("3_llnbm")
+
+[node name="glasses" type="TextureRect" parent="." unique_id=838498087]
+texture_filter = 1
+offset_top = 80.0
+offset_right = 648.0
+offset_bottom = 512.0
+texture = ExtResource("3_12ycv")

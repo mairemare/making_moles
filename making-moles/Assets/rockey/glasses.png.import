@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ubspsraryhsv"
-path="res://.godot/imported/pixilart-sprite.png-44198bb7a0071faf0d1dfe867ec5ae35.ctex"
+uid="uid://67b0nfwfyix6"
+path="res://.godot/imported/glasses.png-6fcf7df6f35a92916ddf2b3a1bc76838.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Main Menu/pixilart-sprite.png"
-dest_files=["res://.godot/imported/pixilart-sprite.png-44198bb7a0071faf0d1dfe867ec5ae35.ctex"]
+source_file="res://Assets/rockey/glasses.png"
+dest_files=["res://.godot/imported/glasses.png-6fcf7df6f35a92916ddf2b3a1bc76838.ctex"]
 
 [params]
 
