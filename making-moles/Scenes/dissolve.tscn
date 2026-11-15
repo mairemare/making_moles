@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://bsnrqs5gbky61" path="res://Assets/Beakers/heavybeaker.png" id="1_0ra42"]
 [ext_resource type="Texture2D" uid="uid://b4ut7gd7qcv3f" path="res://Assets/Beakers/pixil-frame-0-38.png" id="2_8x8gh"]
 [ext_resource type="FontFile" uid="uid://bsb1yfcus3e1l" path="res://Assets/Fonts/Halogen.ttf" id="2_ydcy6"]
+[ext_resource type="Texture2D" uid="uid://xgqxeo1tq8nq" path="res://Assets/Volumetric Flask/empty_flask.png" id="4_h52d7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ydcy6"]
 content_margin_left = 4.0
@@ -170,7 +171,7 @@ offset_bottom = 648.0
 color = Color(0.2627451, 0.18039216, 0.31764707, 1)
 metadata/_edit_lock_ = true
 
-[node name="beaker" type="Button" parent="." unique_id=1851514107]
+[node name="solid_beaker" type="Button" parent="." unique_id=1851514107]
 texture_filter = 1
 offset_left = 64.0
 offset_top = 160.0
@@ -186,7 +187,7 @@ icon_alignment = 1
 expand_icon = true
 metadata/_edit_use_anchors_ = true
 
-[node name="beaker2" type="Button" parent="." unique_id=1873744450]
+[node name="water_beaker" type="Button" parent="." unique_id=1873744450]
 texture_filter = 1
 offset_left = 824.0
 offset_top = 160.0
@@ -201,7 +202,7 @@ icon = ExtResource("2_8x8gh")
 icon_alignment = 1
 expand_icon = true
 
-[node name="Button2" type="Button" parent="." unique_id=481287222]
+[node name="Shake" type="Button" parent="." unique_id=481287222]
 offset_left = 704.0
 offset_top = 512.0
 offset_right = 896.0
@@ -214,7 +215,7 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_6lcbl")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_1prtp")
 text = "Shake"
 
-[node name="Button3" type="Button" parent="." unique_id=390110718]
+[node name="Swirl" type="Button" parent="." unique_id=390110718]
 offset_left = 256.0
 offset_top = 512.0
 offset_right = 448.0
@@ -260,3 +261,14 @@ fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="volumetric_flask" type="TextureRect" parent="." unique_id=393924257]
+texture_filter = 1
+offset_left = 384.0
+offset_top = 112.0
+offset_right = 768.0
+offset_bottom = 496.0
+texture = ExtResource("4_h52d7")
+
+[node name="AnimationPlayer" type="AnimationTree" parent="volumetric_flask" unique_id=1453789161]
+root_node = NodePath("../..")
