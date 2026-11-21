@@ -80,35 +80,6 @@ corner_detail = 16
 expand_margin_top = 3.0
 expand_margin_bottom = 3.0
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8dnnj"]
-bg_color = Color(0.18966004, 0.4974674, 0.37108138, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.12374584, 0.2919288, 0.19685462, 1)
-border_blend = true
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
-corner_detail = 16
-expand_margin_top = 3.0
-expand_margin_bottom = 3.0
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m3bi6"]
-bg_color = Color(0.07141527, 0.23454261, 0.1686163, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0.12374584, 0.2919288, 0.19685462, 1)
-border_blend = true
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_n45e2"]
 bg_color = Color(0.18966004, 0.4974674, 0.37108138, 1)
 border_width_left = 2
@@ -220,14 +191,16 @@ vertical_alignment = 1
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1766063949]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.73300004
-anchor_top = 0.36900002
-anchor_right = 0.73300004
-anchor_bottom = 0.36900002
-offset_left = -204.41602
-offset_top = -47.112015
-offset_right = 179.58398
-offset_bottom = 144.88799
+anchor_left = 0.72200006
+anchor_top = 0.42000002
+anchor_right = 0.72200006
+anchor_bottom = 0.42000002
+offset_left = -191.74408
+offset_top = -104.16
+offset_right = 192.25592
+offset_bottom = 87.84
+grow_horizontal = 2
+grow_vertical = 2
 theme_override_constants/separation = 24
 alignment = 1
 
@@ -245,21 +218,6 @@ theme_override_fonts/font = ExtResource("3_ce3w2")
 theme_override_styles/normal = SubResource("StyleBoxFlat_vtepg")
 text = "Play"
 
-[node name="Creative_Mode" type="Button" parent="VBoxContainer" unique_id=1462694712]
-layout_mode = 2
-mouse_default_cursor_shape = 2
-theme_override_colors/font_color = Color(1, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(0.044694483, 0.1358217, 0.06811853, 1)
-theme_override_colors/font_hover_color = Color(0.35896423, 0.61426777, 0.43351528, 1)
-theme_override_colors/font_hover_pressed_color = Color(0.20158851, 0.42502874, 0.25477138, 1)
-theme_override_colors/font_outline_color = Color(0.44484326, 0.4448433, 0.4448433, 1)
-theme_override_constants/outline_size = 2
-theme_override_constants/h_separation = 8
-theme_override_fonts/font = ExtResource("3_ce3w2")
-theme_override_styles/normal = SubResource("StyleBoxFlat_8dnnj")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_m3bi6")
-text = "About"
-
 [node name="Quit" type="Button" parent="VBoxContainer" unique_id=67424676]
 layout_mode = 2
 mouse_default_cursor_shape = 2
@@ -276,5 +234,4 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_opfnp")
 text = "Quit Game"
 
 [connection signal="pressed" from="VBoxContainer/Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="VBoxContainer/Creative_Mode" to="." method="_on_creative_mode_pressed"]
 [connection signal="pressed" from="VBoxContainer/Quit" to="." method="_on_quit_pressed"]

@@ -10,7 +10,6 @@ var answer = 0
 func _ready() -> void:
 	$Subtract.disabled = true
 	$Add.disabled = false
-	$Record.disabled = true
 	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
@@ -57,6 +56,7 @@ func _process(_delta: float) -> void:
 	#equation for getting the answer (see option button script)
 	answer = (Global.element) * (moles_added)
 	$grams.text = str(answer) + " grams"
+
 	
 	
 #adding and subtracting moles
@@ -71,4 +71,6 @@ func _on_exit_pressed() -> void:
 
 func _on_record_pressed() -> void:
 	Global.grams = answer
-	print(str(Global.grams))
+	Global.moles = float(answer) / Global.element
+	
+	moles_added = 0

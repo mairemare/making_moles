@@ -1,9 +1,12 @@
 extends Node
 
 #stuff
-var player_point = 0
-var lives = 3
-var grams = 58.44
+var grams = 0
+var volume = 0
+var V = 0
+var element = 0
+var conc = 0
+var moles = 0
 
 #conversions
 #element
@@ -17,4 +20,7 @@ var KNO3 = 101.1
 var CaCl2 = 110.98
 var NaCl = 58.44
 
-var element = 0
+#volume
+var onehunml = 100
+var fivehunml = 500
+var thouml = 1000

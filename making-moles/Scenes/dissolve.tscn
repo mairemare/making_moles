@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://b6o81s7dank31" path="res://Assets/Volumetric Flask/shaking.png" id="3_sbj1n"]
 [ext_resource type="Texture2D" uid="uid://xgqxeo1tq8nq" path="res://Assets/Volumetric Flask/empty_flask.png" id="4_h52d7"]
 [ext_resource type="Texture2D" uid="uid://dpgosmjrqf38q" path="res://Assets/Volumetric Flask/swirl.png" id="4_iidu4"]
+[ext_resource type="Script" uid="uid://cuiprg1m7ogld" path="res://Scenes/select_volume.gd" id="6_iidu4"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6mjrh"]
 atlas = ExtResource("3_sbj1n")
@@ -193,7 +194,7 @@ animations = [{
 }],
 "loop": 0,
 "name": &"swirl",
-"speed": 5.0
+"speed": 3.0
 }]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6l3b5"]
@@ -354,6 +355,67 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sbj1n"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.71345454, 0.24589509, 0.6984641, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.6895498, 0.39005876, 0.6695998, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iidu4"]
+bg_color = Color(0.7534232, 0.7860489, 0.92105556, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.9344414, 0.60008, 0.73453444, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6mjrh"]
+bg_color = Color(0.8904631, 0.56416714, 0.86889136, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.8500035, 0.36249495, 0.58449584, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ljxde"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.28354463, 0.33566323, 0.4644599, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.2702342, 0.31573117, 0.43964255, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
 [node name="Node2D" type="Node2D" unique_id=286947295]
 script = ExtResource("1_6563e")
 
@@ -379,6 +441,8 @@ position = Vector2(576, 320)
 scale = Vector2(2.4, 2.4)
 sprite_frames = SubResource("SpriteFrames_fycrg")
 animation = &"swirl"
+frame = 9
+frame_progress = 1.0
 
 [node name="shake_animation" type="AnimatedSprite2D" parent="." unique_id=1262288326]
 visible = false
@@ -390,11 +454,12 @@ animation = &"shake"
 frame = 14
 frame_progress = 1.0
 
-[node name="select_compound" type="OptionButton" parent="." unique_id=1640994045]
-offset_left = 448.0
-offset_top = 31.0
-offset_right = 704.0
-offset_bottom = 102.0
+[node name="select_volume" type="OptionButton" parent="." unique_id=1640994045]
+offset_left = 832.0
+offset_top = 432.0
+offset_right = 952.0
+offset_bottom = 472.0
+tooltip_text = "Select a volume"
 mouse_default_cursor_shape = 2
 theme_override_constants/h_separation = 7
 theme_override_fonts/font = ExtResource("2_ydcy6")
@@ -403,20 +468,20 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_kdrkx")
 theme_override_styles/hover = SubResource("StyleBoxFlat_nh16s")
 theme_override_constants/arrow_margin = 15
 alignment = 1
-allow_reselect = true
 item_count = 3
-popup/item_0/text = "Potassium Nitrate (KNO3)"
+popup/item_0/text = "100"
 popup/item_0/id = 0
-popup/item_1/text = "Calcium Chloride (CaCl2)"
+popup/item_1/text = "500"
 popup/item_1/id = 1
-popup/item_2/text = "Sodium Chloride (NaCl)"
+popup/item_2/text = "1000"
 popup/item_2/id = 2
+script = ExtResource("6_iidu4")
 
 [node name="solid" type="RichTextLabel" parent="." unique_id=1879022987]
-offset_left = 128.0
-offset_top = 416.0
-offset_right = 383.0
-offset_bottom = 480.0
+offset_left = 136.0
+offset_top = 417.0
+offset_right = 391.0
+offset_bottom = 481.0
 theme_override_fonts/normal_font = ExtResource("2_ydcy6")
 theme_override_font_sizes/normal_font_size = 24
 text = "grams"
@@ -424,6 +489,43 @@ fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="title" type="RichTextLabel" parent="." unique_id=1855995631]
+offset_left = 448.0
+offset_right = 703.0
+offset_bottom = 64.0
+theme_override_fonts/normal_font = ExtResource("2_ydcy6")
+theme_override_font_sizes/normal_font_size = 24
+text = "Dissolving a solute"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="steps" type="RichTextLabel" parent="." unique_id=1050358603]
+offset_left = 448.0
+offset_top = 64.0
+offset_right = 703.0
+offset_bottom = 128.0
+theme_override_fonts/normal_font = ExtResource("2_ydcy6")
+theme_override_font_sizes/normal_font_size = 24
+text = "steps"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ml" type="RichTextLabel" parent="." unique_id=351665186]
+offset_left = 952.0
+offset_top = 432.0
+offset_right = 1015.0
+offset_bottom = 472.0
+theme_override_fonts/normal_font = ExtResource("2_ydcy6")
+theme_override_font_sizes/normal_font_size = 24
+text = "mL"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="solid_beaker" type="Button" parent="." unique_id=1851514107]
 texture_filter = 1
@@ -486,7 +588,41 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_6lcbl")
 theme_override_styles/disabled = SubResource("StyleBoxFlat_1prtp")
 text = "Swirl"
 
+[node name="Exit" type="Button" parent="." unique_id=1830851748]
+offset_left = 1064.0
+offset_top = 24.0
+offset_right = 1128.0
+offset_bottom = 88.0
+tooltip_text = "Exit"
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("2_ydcy6")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/normal = SubResource("StyleBoxFlat_sbj1n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_iidu4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6mjrh")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ljxde")
+text = "x"
+
+[node name="Reset" type="Button" parent="." unique_id=1685412868]
+offset_left = 976.0
+offset_top = 24.0
+offset_right = 1040.0
+offset_bottom = 88.0
+tooltip_text = "Reset"
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("2_ydcy6")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/normal = SubResource("StyleBoxFlat_sbj1n")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_iidu4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6mjrh")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ljxde")
+text = "⟳"
+
+[connection signal="animation_finished" from="swirl_animation" to="." method="_on_swirl_animation_animation_finished"]
+[connection signal="animation_finished" from="shake_animation" to="." method="_on_shake_animation_animation_finished"]
 [connection signal="pressed" from="solid_beaker" to="." method="_on_solid_beaker_pressed"]
 [connection signal="pressed" from="water_beaker" to="." method="_on_water_beaker_pressed"]
 [connection signal="pressed" from="Shake" to="." method="_on_shake_pressed"]
 [connection signal="pressed" from="Swirl" to="." method="_on_swirl_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Reset" to="." method="_on_reset_pressed"]

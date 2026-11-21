@@ -14,4 +14,3 @@ func _process(_delta: float) -> void:
 	# says how much grams per mole of the element
 	$"../conversion".text = str(Global.element) + " grams"
 	
-	

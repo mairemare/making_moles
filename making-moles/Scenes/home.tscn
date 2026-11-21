@@ -5,6 +5,273 @@
 [ext_resource type="Texture2D" uid="uid://8th6mi0gyi2x" path="res://Assets/rockey/pixil-frame-0-34.png" id="2_llnbm"]
 [ext_resource type="Texture2D" uid="uid://67b0nfwfyix6" path="res://Assets/rockey/glasses.png" id="3_12ycv"]
 [ext_resource type="Texture2D" uid="uid://cq7054hm7d2qc" path="res://Assets/rockey/open.png" id="3_llnbm"]
+[ext_resource type="Texture2D" uid="uid://b7q6m4r5tf0bb" path="res://Assets/Furniture/notebook_paper.png" id="6_fhpuh"]
+[ext_resource type="Texture2D" uid="uid://xgqxeo1tq8nq" path="res://Assets/Volumetric Flask/empty_flask.png" id="6_nw1ns"]
+[ext_resource type="Texture2D" uid="uid://b4ut7gd7qcv3f" path="res://Assets/Beakers/full_beaker.png" id="7_8riyq"]
+[ext_resource type="Texture2D" uid="uid://bujwqq7473kil" path="res://Assets/Furniture/balance.png" id="8_gyiet"]
+[ext_resource type="Texture2D" uid="uid://dcbxgx3f81d5n" path="res://Assets/Moles/one_mole.png" id="9_jjai4"]
+[ext_resource type="FontFile" uid="uid://bsb1yfcus3e1l" path="res://Assets/Fonts/Halogen.ttf" id="11_8riyq"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fhpuh"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8riyq"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0.6)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gyiet"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.9529412, 0.80784315, 0.5176471, 0.5568628)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jjai4"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vkfas"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q1yq7"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cykap"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.9529412, 0.80784315, 0.5176471, 0.5568628)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nw1ns"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.6, 0.6, 0.6, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lddgv"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_smgrs"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dyher"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ppvi3"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_848r5"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pkgvh"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t7s13"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7wmtr"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0, 0, 0, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y6p71"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.71345454, 0.24589509, 0.6984641, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.6895498, 0.39005876, 0.6695998, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ayluw"]
+bg_color = Color(0.7534232, 0.7860489, 0.92105556, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.9344414, 0.60008, 0.73453444, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_guf2q"]
+bg_color = Color(0.8904631, 0.56416714, 0.86889136, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.8500035, 0.36249495, 0.58449584, 1)
+border_blend = true
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0qnmp"]
+content_margin_left = 4.0
+content_margin_top = 4.0
+content_margin_right = 4.0
+content_margin_bottom = 4.0
+bg_color = Color(0.28354463, 0.33566323, 0.4644599, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.2702342, 0.31573117, 0.43964255, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fycrg"]
+bg_color = Color(1, 0.9452769, 0.962128, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.79832965, 0.62458503, 0.8001019, 1)
 
 [node name="Node2D" type="Node2D" unique_id=795804519]
 script = ExtResource("1_12ycv")
@@ -23,10 +290,10 @@ color = Color(0.6300914, 0.36482078, 0.5134624, 1)
 metadata/_edit_lock_ = true
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=389529585]
-offset_left = 24.0
-offset_top = 24.0
-offset_right = 640.0
-offset_bottom = 352.0
+offset_left = 192.0
+offset_top = 40.0
+offset_right = 952.0
+offset_bottom = 416.0
 texture = ExtResource("2_fhpuh")
 expand_mode = 1
 
@@ -50,3 +317,188 @@ offset_top = 80.0
 offset_right = 648.0
 offset_bottom = 512.0
 texture = ExtResource("3_12ycv")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=491707811]
+texture_filter = 1
+offset_left = 544.0
+offset_top = 248.0
+offset_right = 816.0
+offset_bottom = 544.0
+texture = ExtResource("6_nw1ns")
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=176218965]
+texture_filter = 1
+offset_left = 680.0
+offset_top = 408.0
+offset_right = 840.0
+offset_bottom = 568.0
+texture = ExtResource("7_8riyq")
+
+[node name="TextureRect4" type="TextureRect" parent="." unique_id=961138505]
+texture_filter = 1
+offset_left = 880.0
+offset_top = 416.0
+offset_right = 1080.0
+offset_bottom = 632.0
+texture = ExtResource("8_gyiet")
+
+[node name="TextureRect5" type="TextureRect" parent="." unique_id=1363871505]
+texture_filter = 1
+offset_left = 896.0
+offset_top = 368.0
+offset_right = 1056.0
+offset_bottom = 528.0
+texture = ExtResource("9_jjai4")
+
+[node name="dissolve_tut" type="Button" parent="." unique_id=1297256308]
+texture_filter = 1
+offset_left = 656.0
+offset_top = 120.0
+offset_right = 768.0
+offset_bottom = 256.0
+tooltip_text = "How to dissolve a solute"
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_fhpuh")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8riyq")
+theme_override_styles/hover = SubResource("StyleBoxFlat_gyiet")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_jjai4")
+icon = ExtResource("6_fhpuh")
+icon_alignment = 1
+expand_icon = true
+
+[node name="moles to grams_tut" type="Button" parent="." unique_id=1074691031]
+texture_filter = 1
+offset_left = 776.0
+offset_top = 208.0
+offset_right = 888.0
+offset_bottom = 336.0
+tooltip_text = "How to convert from moles to grams"
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_vkfas")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_q1yq7")
+theme_override_styles/hover = SubResource("StyleBoxFlat_cykap")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_nw1ns")
+icon = ExtResource("6_fhpuh")
+icon_alignment = 1
+expand_icon = true
+
+[node name="moles to grams" type="Button" parent="." unique_id=503302922]
+offset_left = 856.0
+offset_top = 392.0
+offset_right = 1120.0
+offset_bottom = 592.0
+tooltip_text = "Convert moles to grams"
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_lddgv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_smgrs")
+theme_override_styles/hover = SubResource("StyleBoxFlat_dyher")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ppvi3")
+
+[node name="dissolve" type="Button" parent="." unique_id=380868915]
+offset_left = 608.0
+offset_top = 344.0
+offset_right = 832.0
+offset_bottom = 576.0
+tooltip_text = "Dissolve solute"
+mouse_default_cursor_shape = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_848r5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_pkgvh")
+theme_override_styles/hover = SubResource("StyleBoxFlat_t7s13")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_7wmtr")
+text = "
+"
+icon_alignment = 1
+expand_icon = true
+
+[node name="Exit" type="Button" parent="." unique_id=1324029029]
+offset_left = 1064.0
+offset_top = 24.0
+offset_right = 1128.0
+offset_bottom = 88.0
+tooltip_text = "Exit"
+mouse_default_cursor_shape = 2
+theme_override_fonts/font = ExtResource("11_8riyq")
+theme_override_font_sizes/font_size = 56
+theme_override_styles/normal = SubResource("StyleBoxFlat_y6p71")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ayluw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_guf2q")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0qnmp")
+text = "x"
+
+[node name="howtodissolve" type="RichTextLabel" parent="." unique_id=1024989551]
+visible = false
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 1128.0
+offset_bottom = 624.0
+theme_override_colors/default_color = Color(0.6750817, 0.1732086, 0.5709119, 1)
+theme_override_font_sizes/normal_font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_fycrg")
+text = "How to dissolve a solute using a volumetric flask:
+
+1.) Get solute (convert moles to grams)
+2.) Pour water up to half the flask
+3.) Add solid
+4.) Swirl the flask
+5.) Pour water up to calibration marker
+6.) Shake the flask"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="back" type="Button" parent="howtodissolve" unique_id=1115673783]
+visible = false
+layout_mode = 0
+offset_left = 456.0
+offset_top = 536.0
+offset_right = 648.0
+offset_bottom = 584.0
+theme_override_fonts/font = ExtResource("11_8riyq")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_y6p71")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ayluw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_guf2q")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0qnmp")
+text = "back"
+
+[node name="howconvert" type="RichTextLabel" parent="." unique_id=585198750]
+visible = false
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 1128.0
+offset_bottom = 624.0
+theme_override_colors/default_color = Color(0.6750817, 0.1732086, 0.5709119, 1)
+theme_override_font_sizes/normal_font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_fycrg")
+text = "How to convert moles to grams:
+
+1.) Get the element/compound's molar mass
+2.) Multiply it to the amount of moles you have
+3.) Press record to get the mass of solid
+
+Example:
+5 mol H x 1.008g H =  5.04g H"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="backout" type="Button" parent="howconvert" unique_id=1200321773]
+visible = false
+layout_mode = 0
+offset_left = 456.0
+offset_top = 536.0
+offset_right = 648.0
+offset_bottom = 584.0
+theme_override_fonts/font = ExtResource("11_8riyq")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_y6p71")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ayluw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_guf2q")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_0qnmp")
+text = "back"
+
+[connection signal="pressed" from="dissolve_tut" to="." method="_on_dissolve_tut_pressed"]
+[connection signal="pressed" from="moles to grams_tut" to="." method="_on_moles_to_grams_tut_pressed"]
+[connection signal="pressed" from="moles to grams" to="." method="_on_moles_to_grams_pressed"]
+[connection signal="pressed" from="dissolve" to="." method="_on_dissolve_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="howtodissolve/back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="howconvert/backout" to="." method="_on_backout_pressed"]
